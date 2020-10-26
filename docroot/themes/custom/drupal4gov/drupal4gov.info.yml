@@ -1,6 +1,6 @@
 name: Drupal4Gov Main Theme
 type: theme
-description: 'Responsive thme for Drupal4Gov'
+description: 'Responsive theme for Drupal4Gov'
 core_version_requirement: ^8.8 || ^9
 base theme: cog
 libraries:
