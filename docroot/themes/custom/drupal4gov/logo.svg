@@ -1,16 +1,14 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg height="100%" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0 0 100.000000 114.000000" width="100%" xmlns="http://www.w3.org/2000/svg">
-  <g id="logo" fill="#000000" stroke="none" transform="translate(0.000000,114.000000) scale(0.050000,-0.050000)">
-    <path d="M900 2182 c0 -206 -90 -317 -379 -472 -580 -310 -684 -949 -233
--1427 151 -159 187 -171 118 -39 -174 332 31 788 389 865 36 8 65 17 65 20 0
-3 -13 44 -30 91 -107 302 65 587 384 637 l84 13 -199 192 -199 192 0 -72z"/>
-    <path d="M1114 1624 c-128 -79 -164 -275 -72 -392 170 -216 477 -103 478 175
-0 199 -233 324 -406 217z"/>
-    <path d="M1720 1384 c0 -172 -174 -424 -293 -424 -37 0 -35 -5 32 -112 149
--235 120 -536 -71 -747 l-76 -85 79 33 c558 230 766 844 440 1300 -111 157
--111 156 -111 35z"/>
-    <path d="M820 848 c-147 -64 -220 -172 -220 -328 0 -346 420 -487 631 -211
-211 277 -94 677 -411 539z"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="D4G_Droplet_Only" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M20.9,4.6L18,1.7l-9.3,9.3l0,0c-2.4,2.4-3.9,5.7-3.9,9.3c0,0.3,0,0.6,0,0.9L20.9,4.6z"/>
+		<polygon points="18.7,20.4 18.7,14.3 13.1,20.4 		"/>
+		<path d="M24,20.4h7.2c0-3.6-1.5-7-3.9-9.3l0,0L24,7.7V20.4z"/>
+		<path d="M18.7,25.7H5.9c0.7,1.5,1.6,2.9,2.8,4l0,0c2.4,2.4,5.7,3.9,9.3,3.9c0.2,0,0.4,0,0.7,0V25.7z"/>
+		<path d="M24,25.7v6.5c1.2-0.6,2.4-1.5,3.4-2.4l0,0c1.2-1.2,2.1-2.5,2.8-4H24z"/>
+	</g>
+</g>
 </svg>
