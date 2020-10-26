@@ -1,0 +1,24 @@
+name: Drupal4Gov Main Theme
+type: theme
+description: 'Responsive thme for Drupal4Gov'
+core: ^8.8 || ^9
+hidden: true
+base theme: cog
+libraries:
+  - drupal4gov/fonts
+  - drupal4gov/fontawesome
+  - drupal4gov/global_styles
+regions:
+  branding: Branding
+  header: Header
+  pre_content: 'Pre content'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  post_content: 'Post content'
+  footer: Footer
+
+# Information added by Drupal.org packaging script on 2020-03-17
+version: '8.x-1.15'
+project: 'cog'
+datestamp: 1584454091
