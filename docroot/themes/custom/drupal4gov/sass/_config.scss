@@ -18,8 +18,32 @@ $link: $med-gray;
 // Fonts ///////////////
 $opensans: 'Open Sans';
 $poppins: 'Poppins';
-$heading_font: $opensans;
-$body_font: $poppins;
+$sourcesans: 'Source Sans 3 VF Roman', Helvetica, Arial, sans-serif;
+$sourcesans_ital: 'Source Sans 3 VF Italic', Helvetica, Arial, sans-serif;
+//$heading_font: $opensans;
+$heading_font: $sourcesans;
+//$body_font: $poppins;
+$body_font: $sourcesans;
+
+
+// Local Font Inclusion
+@font-face {
+  font-family: 'Source Sans 3 VF Roman';
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url('/themes/custom/drupal4gov/fonts/source-sans/SourceSans3VF-Roman.otf.woff2') format('woff2 supports variations'),
+       url('/themes/custom/drupal4gov/fonts/source-sans/SourceSans3VF-Roman.otf.woff2') format('woff2-variations');
+}
+
+@font-face {
+  font-family: 'Source Sans 3 VF Italic';
+  font-weight: 200 900;
+  font-style: italic;
+  font-stretch: normal;
+  src: url('/themes/custom/drupal4gov/fonts/source-sans/SourceSans3VF-Italic.otf.woff2') format('woff2 supports variations'),
+       url('/themes/custom/drupal4gov/fonts/source-sans/SourceSans3VF-Italic.otf.woff2') format('woff2-variations');
+}
 
 // Susy config ///////////////
 $susy: (
