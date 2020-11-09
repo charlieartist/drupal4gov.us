@@ -17,19 +17,16 @@
 		grid-template-columns: repeat(4, 1fr);
 		padding: 0 20px 0 20px;
 		grid-column-gap: 20px;
-		//grid-row-gap: 1em;
   @include breakpoint($medium) {
 		display: grid;
 		grid-template-columns: repeat(8, 1fr);
 		padding: 0 20px 0 20px;
 		grid-column-gap: 20px;
-		//grid-row-gap: 1em;
 	}
   @include breakpoint($large) {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		padding: 0 20px 0 20px;
 		grid-column-gap: 20px;
-		//grid-row-gap: 1em;
 	}
 }

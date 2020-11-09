@@ -9,21 +9,43 @@
 //////////////////////////////////
 // Sidebar First /////////////////
 //////////////////////////////////
+.body-sidebars-first aside.sidebar-first {
+  grid-column: 1/ span 4;
+}
+
+.body-sidebars-first section#content {
+  grid-column: 1/ span 4;
+}
+
 .body-sidebars-first {
   @include breakpoint($up-sm) {
     aside.sidebar-first {
-      @include span(3 of 12);
+      //@include span(3 of 12); // Susy setting
+      grid-column: 1/span 5;
+      @include breakpoint($medium) {
+        grid-column: 1/span 2;
+      }
+      @include breakpoint($large) {
+        grid-column: 1/span 3;
+      }
 
       > * {
-        padding-left: 15px;
+        //padding-left: 15px;
       }
     }
 
     section#content {
-      @include span(9 of 12 last);
+      //@include span(9 of 12 last);
+      grid-column: 1/span 4;
+      @include breakpoint($medium) {
+        grid-column: 3/span 6;
+      }
+      @include breakpoint($large) {
+        grid-column: 4/span 9;
+      }
 
       > * {
-        padding-right: 25px;
+        //padding-right: 25px;
       }
     }
   }
@@ -31,21 +53,41 @@
 //////////////////////////////////
 // Sidebar Second ////////////////
 //////////////////////////////////
+.body-sidebars-second section#content {
+  grid-column: 1/span 4;
+}
+.body-sidebars-second aside.sidebar-second {
+  grid-column: 1/span 4;
+}
+
 .body-sidebars-second {
   @include breakpoint($up-sm) {
-    aside.sidebar-second {
-      @include span(3 of 12 last);
+    section#content {
+      //@include span(3 of 12 last); // Susy setting
+        // Settings Here
+        @include breakpoint($medium) {
+        grid-column: 1/span 5;
+      }
+      @include breakpoint($large) {
+        grid-column: 1/span 9;
+      }
 
       > * {
-        padding-right: 15px;
+        //padding-right: 15px;
       }
     }
 
-    section#content {
-      @include span(9 of 12);
+    aside.sidebar-second {
+      //@include span(9 of 12); // Susy setting
+       @include breakpoint($medium) {
+        grid-column: 6/span 3;
+      }
+      @include breakpoint($large) {
+        grid-column: 10/span 3;
+      }
 
       > * {
-        padding-left: 25px;
+        //padding-left: 25px;
       }
     }
   }
@@ -56,26 +98,44 @@
 .body-sidebars-both {
   @include breakpoint($up-sm) {
     aside.sidebar-first {
-      @include span(2 of 12);
-
-      > * {
-        padding-left: 15px;
+      //@include span(2 of 12); // Susy setting
+      @include breakpoint($medium) {
+        grid-column: 1/span 2;
       }
-    }
-
-    aside.sidebar-second {
-      @include span(2 of 12 last);
+      @include breakpoint($large) {
+        grid-column: 1/span 3;
+      }
 
       > * {
-        padding-right: 15px;
+        //padding-left: 15px;
       }
     }
 
     section#content {
-      @include span(8 of 12);
+      //@include span(2 of 12 last); // Susy setting
+      @include breakpoint($medium) {
+        grid-column: 3/span 4;
+      }
+      @include breakpoint($large) {
+        grid-column: 4/span 6;
+      }
 
       > * {
-        padding-right: 25px;
+        //padding-right: 15px;
+      }
+    }
+
+     aside.sidebar-second {
+      //@include span(8 of 12); // Susy setting
+      @include breakpoint($medium) {
+        grid-column: 7/span 2;
+      }
+      @include breakpoint($large) {
+        grid-column: 10/span 3;
+      }
+
+      > * {
+        //padding-right: 25px;
       }
     }
   }
@@ -85,11 +145,18 @@
 //////////////////////////////////
 .body-sidebars-none {
   section#content {
-    @include span(12 of 12);
+    //@include span(12 of 12); // Susy setting
+    grid-column: 1/span 4;
+    @include breakpoint($medium) {
+      grid-column: 1/span 8;
+    }
+    @include breakpoint($large) {
+      grid-column: 1/span 12;
+    }
 
     > * {
-      padding-left: 15px;
-      padding-right: 15px;
+      //padding-left: 15px;
+      //padding-right: 15px;
     }
   }
 }
