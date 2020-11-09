@@ -1,0 +1,20 @@
+uuid: 2a5b9ff6-c2d8-4b71-a46a-ba67f686b94a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal4gov
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupal4gov_page_title
+theme: drupal4gov
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

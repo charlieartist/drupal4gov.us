@@ -1,0 +1,20 @@
+uuid: fa949daf-b8f9-4dc8-8347-efd7976ff872
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal4gov
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupal4gov_local_actions
+theme: drupal4gov
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

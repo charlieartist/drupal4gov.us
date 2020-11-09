@@ -1,0 +1,22 @@
+uuid: bc34ecdc-33e8-4df2-9e83-62fdb733c002
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal4gov
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: drupal4gov_breadcrumbs
+theme: drupal4gov
+region: branding
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
