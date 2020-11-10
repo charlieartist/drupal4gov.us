@@ -51,8 +51,8 @@ $body_font: $sourcesans;
   font-weight: 200 900;
   font-style: normal;
   font-stretch: normal;
-  src: url('/themes/custom/drupal4gov/fonts/source-sans/SourceSans3VF-Roman.otf.woff2') format('woff2 supports variations'),
-       url('/themes/custom/drupal4gov/fonts/source-sans/SourceSans3VF-Roman.otf.woff2') format('woff2-variations');
+  src: url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff2') format('woff2 supports variations'),
+       url('../fonts/source-sans/SourceSans3VF-Roman.ttf.woff2') format('woff2-variations');
 }
 
 @font-face {
