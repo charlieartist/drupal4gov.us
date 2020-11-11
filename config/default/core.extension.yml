@@ -100,10 +100,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
-<<<<<<< HEAD
   redirect: 0
-=======
->>>>>>> 76db21f... D4G-093: Theme settings updated.
   schemata: 0
   schemata_json_schema: 0
   search_api: 0
