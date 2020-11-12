@@ -172,7 +172,7 @@ var options = {
     ],
     js: [],
     homepage: 'style-guide-only/homepage.md',
-    title: 'Living Style Guide'
+    title: 'Drupal4Gov Style Guide'
   },
 
   // ------ pa11y ----- //
