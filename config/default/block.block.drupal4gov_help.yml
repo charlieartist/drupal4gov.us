@@ -1,0 +1,22 @@
+uuid: ccf4de05-97f7-44b4-9a63-242489e8bd2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupal4gov
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupal4gov_help
+theme: drupal4gov
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

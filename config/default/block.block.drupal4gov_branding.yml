@@ -1,4 +1,4 @@
-uuid: dd777c5c-e787-490b-ae41-36e2cbfab8c5
+uuid: 69c982f7-bbd3-474d-b610-67257639fc29
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,11 @@ dependencies:
     - system
   theme:
     - drupal4gov
-id: sitebranding
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: drupal4gov_branding
 theme: drupal4gov
-region: branding
+region: header
 weight: 0
 provider: null
 plugin: system_branding_block

@@ -1,4 +1,4 @@
-uuid: 72dd400e-fba4-4e38-a312-e4ddff9a9531
+uuid: 76058f4a-5e20-4a34-9a80-6c700c50508e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,9 @@ dependencies:
     - system
   theme:
     - drupal4gov
-id: mainpagecontent
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: drupal4gov_content
 theme: drupal4gov
 region: content
 weight: 0
@@ -16,5 +18,5 @@ settings:
   id: system_main_block
   label: 'Main page content'
   provider: system
-  label_display: visible
+  label_display: '0'
 visibility: {  }
