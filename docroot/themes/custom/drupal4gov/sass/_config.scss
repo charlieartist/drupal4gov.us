@@ -117,8 +117,8 @@ body {
   }
 }
 
-@mixin borderradius($px: 5px) {
-  border-radius: $px;
+@mixin borderradius($em: 0.25em) {
+  border-radius: $em;
   // background-clip: padding-box;
 }
 // Example Placeholders ///////////////

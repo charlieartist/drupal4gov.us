@@ -11,7 +11,8 @@ form {
 
 label {
   display: inline-block;
-  color: $dark-gray;
+  //color: $dark-gray;
+  color: $navy;
   cursor: pointer;
   font-weight: 500;
   margin: 0 0 0.1875em;
@@ -78,16 +79,23 @@ input[type="reset"],
 input[type="submit"] {
   @include borderradius();
 
-  border: 1px solid $white;
-  padding: 5px 11px;
-  background: $off-white;
-  color: $med-gray;
+  //border: 1px solid $white;
+  //padding: 5px 11px;
+  //background: $off-white;
+  //color: $med-gray;
+  background: $navy;
+  border: none;
+  color: $white;
+  outline: none;
+  padding: 0.5em 1em;
+  text-decoration: none;
 
-  @extend .tmp-shadow;
+  // @extend .tmp-shadow;
 
   &:hover,
   &:focus {
-    background: $lighter-gray;
+    //background: $lighter-gray;
+    background: $cerulean;
   }
 }
 // Error conditions ////////////////////////////
