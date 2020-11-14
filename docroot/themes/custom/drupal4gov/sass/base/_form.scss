@@ -84,7 +84,7 @@ input[type="submit"] {
   //background: $off-white;
   //color: $med-gray;
   background: $navy;
-  background: fuchsia;
+  //background: fuchsia;
   border: none;
   color: $white;
   outline: none;
@@ -219,6 +219,7 @@ form input {
   }
 
   &:hover {
-    background-color: $light-gray;
+    //background-color: $light-gray;
+    background-color: $cerulean;
   }
 }
