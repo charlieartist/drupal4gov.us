@@ -20,6 +20,13 @@ label {
   vertical-align: top;
 }
 
+// Required Element Styling
+.form-required::after {
+  content: '*';
+  margin-left: 0.2rem;
+  color: $crimson;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="date"],
