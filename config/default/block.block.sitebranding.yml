@@ -1,0 +1,23 @@
+uuid: 84c1556b-b8d5-41d5-98db-9ad75aa39042
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal4gov
+id: sitebranding
+theme: drupal4gov
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
