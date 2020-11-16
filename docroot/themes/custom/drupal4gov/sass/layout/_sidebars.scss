@@ -1,10 +1,10 @@
-// Layout
+// Sidebars Both
 //
-// Sidebars Region Styling
+// Sidebars Both Region Styling
 //
-// Markup: sidebars.twig
+// Markup: sidebars-both.twig
 //
-// Style guide: layout.sidebars
+// Style guide: layout.sidebars-both
 
 //////////////////////////////////
 // Sidebar First /////////////////
@@ -95,10 +95,26 @@
 //////////////////////////////////
 // Sidebar Both //////////////////
 //////////////////////////////////
+
+// Needs to be here to override CSS reset
+.body-sidebars-both aside.sidebar-first {
+  grid-column: 1/span 4;
+}
+
+.body-sidebars-both section#content {
+  grid-column: 1/span 4;
+}
+
+.body-sidebars-both aside.sidebar-second {
+  grid-column: 1/span 4;
+}
+
+
 .body-sidebars-both {
   @include breakpoint($up-sm) {
     aside.sidebar-first {
       //@include span(2 of 12); // Susy setting
+      //grid-column: 1/span 4;
       @include breakpoint($medium) {
         grid-column: 1/span 2;
       }
@@ -113,6 +129,7 @@
 
     section#content {
       //@include span(2 of 12 last); // Susy setting
+      //grid-column: 1/span 4;
       @include breakpoint($medium) {
         grid-column: 3/span 4;
       }
@@ -126,6 +143,7 @@
     }
 
      aside.sidebar-second {
+      //grid-column: 1/span 4;
       //@include span(8 of 12); // Susy setting
       @include breakpoint($medium) {
         grid-column: 7/span 2;

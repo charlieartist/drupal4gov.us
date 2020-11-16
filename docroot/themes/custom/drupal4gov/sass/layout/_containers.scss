@@ -4,7 +4,7 @@
 
 .cog--mq {
   //@include container(80em); // Old Susy Code
-  @include clearfix;
+  @include clearfix; // Needed if Susy isn't used
   max-width: 80em; // Sets max width for container elements
   margin: 10px auto;
 }
