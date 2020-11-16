@@ -121,6 +121,14 @@ body {
   border-radius: $em;
   // background-clip: padding-box;
 }
+
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
 // Example Placeholders ///////////////
 .no-ul-list {
   list-style-type: none;

@@ -3,8 +3,9 @@
 //////////////////////////////////
 
 .cog--mq {
-  @include container(80em);
-
+  //@include container(80em); // Old Susy Code
+  @include clearfix;
+  max-width: 80em; // Sets max width for container elements
   margin: 10px auto;
 }
 
