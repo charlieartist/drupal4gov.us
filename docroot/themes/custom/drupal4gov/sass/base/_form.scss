@@ -91,7 +91,6 @@ input[type="submit"] {
   //background: $off-white;
   //color: $med-gray;
   background: $navy;
-  //background: fuchsia;
   border: none;
   color: $white;
   outline: none;
@@ -104,6 +103,11 @@ input[type="submit"] {
   &:focus {
     //background: $lighter-gray;
     background: $cerulean;
+  }
+
+  &.button--primary {
+    border: none;
+    background: black;
   }
 }
 // Error conditions ////////////////////////////
