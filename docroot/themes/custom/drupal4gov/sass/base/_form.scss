@@ -111,17 +111,24 @@ input[type="submit"] {
   }
 }
 // Checkbox and Radio Element Styling—Adapted from Core Claro theme ////////////////////////////
-.form-type--boolean {
+// TODO: This is Drupal-specific, and needs to be Sassified.
+.form-type--boolean,
+input[type="checkbox"],
+input[type="radio"], {
   margin-left: 1.6875rem; // LTR Arrangement
   line-height: 1.5rem;
 }
 
-[dir="rtl"] .form-type--boolean {
+[dir="rtl"] .form-type--boolean,
+[dir="rtl"] input[type="checkbox"],
+[dir="rtl"] input[type="radio"] {
   margin-right: 1.6875rem;
   margin-left: 0;
 }
 
-.form-type--boolean .form-boolean {
+.form-type--boolean .form-boolean,
+input[type="checkbox"],
+input[type="radio"] {
   position: relative;
   top: 0.75rem;
   float: left; /* LTR */
@@ -129,7 +136,9 @@ input[type="submit"] {
   transform: translateY(-50%);
 }
 
-[dir="rtl"] .form-type--boolean .form-boolean {
+[dir="rtl"] .form-type--boolean .form-boolean,
+[dir="rtl"] input[type="checkbox"],
+[dir="rtl"] input[type="radio"] {
   float: right;
   margin-right: -1.6875rem;
   margin-left: 0;
@@ -161,13 +170,15 @@ input[type="submit"] {
 
 
 // Input Appearance
-.form-boolean {
+.form-boolean,
+input[type="checkbox"],
+input[type="radio"] {
   display: inline-block;
   box-sizing: border-box;
   width: 18px;
   height: 18px;
   vertical-align: text-bottom;
-  border: 1px solid #8e929c;
+  border: 1px solid $navy;
   border-radius: 2px;
   background: #fff no-repeat 50% 50%;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' viewBox='0 0 12 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.18182 6.96572L1.97655 4.64855L1.79545 4.45826L1.61436 4.64855L0.818904 5.48437L0.654878 5.65672L0.818904 5.82907L4.00072 9.17235L4.18182 9.36263L4.36291 9.17235L11.1811 2.00817L11.3451 1.83582L11.1811 1.66347L10.3856 .827651L10.2045 .637365L10.0234 .82765L4.18182 6.96572Z' fill='white' /%3E%3C/svg%3E");
@@ -178,59 +189,77 @@ input[type="submit"] {
   appearance: none;
 }
 
-.form-boolean--type-radio {
+.form-boolean--type-radio,
+input[type="radio"] {
   width: 19px;
   height: 19px;
   border-radius: 19px;
 }
 
 .form-boolean:active,
-.form-boolean:hover {
+.form-boolean:hover
+input[type="checkbox"]:active,
+input[type="radio"]:hover, {
   border-color: #222330;
   box-shadow: inset 0 0 0 1px #222330;
 }
 
 .form-boolean:focus:active,
-.form-boolean:focus:hover {
+.form-boolean:focus:hover,
+input[type="checkbox"]:focus:active,
+input[type="checkbox"]:focus:hover,
+input[type="radio"]:focus:active,
+input[type="radio"]:focus:hover, {
   box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769, inset 0 0 0 1px #222330;
 }
 
-.form-boolean--type-checkbox:checked {
+.form-boolean--type-checkbox:checked,
+input[type="checkbox"]:checked {
   border-color: #003cc5;
   background-color: #003cc5;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.7949219,7.095703 6.1816406,9.601563 12.205078,3.2753906 13.689453,4.8359375 6.1816406,12.724609 2.3105469,8.65625 Z' fill='white'/%3E%3C/svg%3E");
 }
 
 .form-boolean--type-checkbox:checked:active,
-.form-boolean--type-checkbox:checked:hover {
+.form-boolean--type-checkbox:checked:hover,
+input[type="checkbox"]:checked:active,
+input[type="checkbox"]:checked:hover {
   border-color: #222330;
   background-color: #222330;
 }
 
-.form-boolean--type-radio:checked {
+.form-boolean--type-radio:checked,
+input[type="radio"]:checked {
   border-color: #003cc5;
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='4.5' cx='8.5' cy='8.5' fill='%23004adc'/%3E%3C/svg%3E");
   box-shadow: inset 0 0 0 1px #003cc5;
 }
 
-.form-boolean--type-radio:checked:focus {
+.form-boolean--type-radio:checked:focus,
+input[type="radio"]:checked:focus {
   box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769, inset 0 0 0 1px #003cc5;
 }
 
 .form-boolean--type-radio:checked:active,
-.form-boolean--type-radio:checked:hover {
+.form-boolean--type-radio:checked:hover,
+input[type="radio"]:checked:active,
+input[type="radio"]:checked:hover {
   border-color: #222330;
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='4.5' cx='8.5' cy='8.5' fill='%23222330'/%3E%3C/svg%3E");
   box-shadow: inset 0 0 0 1px #222330;
 }
 
 .form-boolean--type-radio:checked:focus:active,
-.form-boolean--type-radio:checked:focus:hover {
+.form-boolean--type-radio:checked:focus:hover
+input[type="radio"]:checked:focus:active,
+input[type="radio"]:checked:focus:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769, inset 0 0 0 1px #222330;
 }
 
 // Error States
-.form-boolean.error {
+.form-boolean.error
+input[type="checkbox"].error
+input[type="radio"].error {
   border-color: #d72222;
   background-color: #fff;
   box-shadow: inset 0 0 0 1px #d72222;
@@ -255,17 +284,21 @@ input[type="submit"] {
 
 .form-boolean--type-checkbox.error:checked,
 .form-boolean--type-checkbox.error:checked:active,
-.form-boolean--type-checkbox.error:checked:hover {
+.form-boolean--type-checkbox.error:checked:hover, {
   background-color: #d72222;
 }
 
 .form-boolean--type-radio.error:checked,
 .form-boolean--type-radio.error:checked:active,
-.form-boolean--type-radio.error:checked:hover {
+.form-boolean--type-radio.error:checked:hover
+input[type="radio"].error:checked,
+input[type="radio"].error:checked:active,
+input[type="radio"].error:checked:hover {
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='4.5' cx='8.5' cy='8.5' fill='%23d72222'/%3E%3C/svg%3E");
 }
 
-.form-boolean--type-radio.error:checked:focus {
+.form-boolean--type-radio.error:checked:focus
+input[type="radio"].error:checked:focus {
   box-shadow: 0 0 0 2px #fff, 0 0 0 5px #26a769, inset 0 0 0 1px #d72222;
 }
 
@@ -283,7 +316,8 @@ input[type="submit"] {
   box-shadow: none;
 }
 
-.form-boolean--type-checkbox[disabled]:checked {
+.form-boolean--type-checkbox[disabled]:checked,
+input[type="checkbox"][disabled]:checked {
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.7949219,7.095703 6.1816406,9.601563 12.205078,3.2753906 13.689453,4.8359375 6.1816406,12.724609 2.3105469,8.65625 Z' fill='%2382828c'/%3E%3C/svg%3E");
 }
 
